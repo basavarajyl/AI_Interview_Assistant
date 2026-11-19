@@ -37,7 +37,7 @@ if st.button("Generate AI Response", type = "primary"):
   elif mode == "improve answers":
      task = "question :" + question + "MY Answer : " + answer + "imporve the answern based oon choice on words key words to include. do not invent anything about candidate " 
    background = "job role :" + role + "difficult levet " + level
-   with st.spinner(" generating your answer .... "):
+  with st.spinner(" generating your answer .... "):
      try:
        response = client.chat.completions.create(
          model = gen_model,
